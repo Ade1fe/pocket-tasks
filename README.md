@@ -1,17 +1,53 @@
-# pocket_tasks
+# Pocket Tasks
 
-A new Flutter project.
+A simple, efficient, and beautifully designed Flutter task management application to help you organize your daily to-dos with ease.
 
-## Getting Started
+https://github.com/user-attachments/assets/be03c4bb-b359-4b75-81a3-aac86d2ffa45
 
-This project is a starting point for a Flutter application.
+## 🚀 Getting Started
 
-A few resources to get you started if this is your first Flutter project:
+To get Pocket Tasks up and running on your local machine:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Ade1fe/pocket-tasks.git](https://github.com/Ade1fe/pocket-tasks.git)
+    cd pocket-tasks
+    ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# pocket-tasks
+2.  **Install dependencies:**
+    ```bash
+    flutter pub get
+    ```
+
+3.  **Run the app:**
+    ```bash
+    flutter run
+    ```
+    (For building a release APK, use `flutter build apk --release`. The output will be in `build/app/outputs/flutter-apk/`)
+
+## ✨ State Management
+
+This application utilizes **Provider** for state management. Provider was chosen for its simplicity, efficiency in rebuilding only necessary widgets, and its strong integration with the Flutter framework.
+
+## 🏗️ Architecture Summary
+
+The project follows a clean, layered architecture to ensure maintainability and testability:
+
+-   **UI Layer (Widgets)**: Handles user interaction and displays data.
+-   **Provider Layer**: Manages application state and business logic using the Provider package.
+-   **Service Layer**: Encapsulates external interactions, such as data persistence.
+-   **Data Persistence**: Task data is handled locally using **SharedPreferences**. This was chosen for its simplicity and reliability, making it ideal for storing the application's data.
+
+This separation ensures a clear flow of data and concerns throughout the application.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to fork the repository and submit pull requests.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 👨‍💻 Developer
+
+Built with ❤️ by Oluwadamisi Damilola
