@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:pocket_tasks/models/tasks.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
-// import '../models/task.dart';
 import '../providers/task_provider.dart';
 
 class TaskListItem extends StatelessWidget {

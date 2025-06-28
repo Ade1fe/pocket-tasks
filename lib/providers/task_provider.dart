@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:pocket_tasks/models/tasks.dart';
-// import '../models/task.dart';
 import '../services/storage_service.dart';
 
 enum TaskFilter { all, active, completed }
