@@ -25,28 +25,59 @@ To get Pocket Tasks up and running on your local machine:
     ```
     (For building a release APK, use `flutter build apk --release`. The output will be in `build/app/outputs/flutter-apk/`)
 
-## ✨ State Management
+## ✨ Key Features
 
-This application utilizes **Provider** for state management. Provider was chosen for its simplicity, efficiency in rebuilding only necessary widgets, and its strong integration with the Flutter framework.
+Pocket Tasks offers a streamlined experience with the following capabilities:
 
-## 🏗️ Architecture Summary
+* **Task Management:** Easily add, edit, and delete tasks.
+* **Completion Status:** Mark tasks as complete or incomplete.
+* **Filtering & Sorting:** Filter tasks by status (All, Active, Completed) and sort them by due date or creation date.
+* **Theme Support:** Switch between beautiful Light and Dark themes.
+* **Task Insights:** View basic task statistics and progress tracking.
+* **Due Dates:** Assign due dates with clear overdue indicators.
 
-The project follows a clean, layered architecture to ensure maintainability and testability:
+## 💡 State Management
 
--   **UI Layer (Widgets)**: Handles user interaction and displays data.
--   **Provider Layer**: Manages application state and business logic using the Provider package.
--   **Service Layer**: Encapsulates external interactions, such as data persistence.
--   **Data Persistence**: Task data is handled locally using **SharedPreferences**. This was chosen for its simplicity and reliability, making it ideal for storing the application's data.
+This application utilizes **Provider** for state management. Provider was chosen for its simplicity, efficiency in rebuilding only necessary widgets, and its strong integration with the Flutter framework, ensuring a reactive and high-performing UI.
 
-This separation ensures a clear flow of data and concerns throughout the application.
+## 🏗️ Architecture Overview
+
+The project follows a clean, layered architecture to ensure maintainability, scalability, and testability:
+
+* **UI Layer (Widgets)**: Responsible for presenting information and handling user interactions.
+* **Provider Layer**: Manages the application's state and encapsulates core business logic, acting as the bridge between the UI and data services.
+* **Service Layer**: Handles external interactions and abstracts data operations.
+* **Data Persistence**: Task data is handled locally using **SharedPreferences**. This was chosen for its simplicity and reliability, making it ideal for storing the application's data directly on the device.
+
+This clear separation of concerns ensures a robust and organized application structure.
+
+## 🧪 Testing
+
+The application includes comprehensive tests to ensure reliability and functionality:
+
+* **Unit Tests:** Covering core logic in models, providers, and services.
+* **Widget Tests:** Validating UI components and their interactions.
+
+To run the tests:
+```bash
+flutter test
+```
+## 🚀 Future Enhancements
+
+Potential future developments for Pocket Tasks include:
+
+* Task categories and tags
+* Reminders and notifications
+* Cloud synchronization for multi-device access
+* Advanced filtering and search options
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to fork the repository and submit pull requests.
+Contributions are highly welcome! Please feel free to fork the repository, make your changes, and submit pull requests. Ensure your code adheres to the project's style and all tests pass.
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Developer
 
